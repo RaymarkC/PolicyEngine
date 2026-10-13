@@ -1,0 +1,83 @@
+{
+  "plan": {
+    "plan_id": "SAMPLE-PASS-001",
+    "description": "Two-day plan that follows all three example policies",
+    "days": [
+      {
+        "day": "Day 1",
+        "meals": [
+          {
+            "type": "breakfast",
+            "items": [
+              {"name": "Oatmeal, cooked (1 cup)", "servings": 1, "tags": ["whole_grain"], "nutrients": {"calories_kcal": 160, "sodium_mg": 5, "carbs_g": 28, "fiber_g": 4, "added_sugar_g": 0, "sat_fat_g": 0.5, "trans_fat_g": 0}},
+              {"name": "Boiled egg", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 78, "sodium_mg": 62, "carbs_g": 0.6, "fiber_g": 0, "added_sugar_g": 0, "sat_fat_g": 1.6, "trans_fat_g": 0}},
+              {"name": "Banana (1 medium)", "servings": 1, "tags": ["fruit"], "nutrients": {"calories_kcal": 105, "sodium_mg": 1, "carbs_g": 27, "fiber_g": 3.1, "added_sugar_g": 0, "sat_fat_g": 0.1, "trans_fat_g": 0}}
+            ]
+          },
+          {
+            "type": "lunch",
+            "items": [
+              {"name": "Grilled chicken breast (100 g)", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 165, "sodium_mg": 74, "carbs_g": 0, "fiber_g": 0, "added_sugar_g": 0, "sat_fat_g": 1.0, "trans_fat_g": 0}},
+              {"name": "Brown rice, cooked (3/4 cup)", "servings": 1, "tags": ["whole_grain"], "nutrients": {"calories_kcal": 160, "sodium_mg": 5, "carbs_g": 33, "fiber_g": 2.5, "added_sugar_g": 0, "sat_fat_g": 0.3, "trans_fat_g": 0}},
+              {"name": "Steamed mixed vegetables (80 g)", "servings": 2, "tags": ["vegetable"], "nutrients": {"calories_kcal": 30, "sodium_mg": 25, "carbs_g": 6, "fiber_g": 2.5, "added_sugar_g": 0, "sat_fat_g": 0, "trans_fat_g": 0}},
+              {"name": "Papaya cubes (80 g)", "servings": 1, "tags": ["fruit"], "nutrients": {"calories_kcal": 35, "sodium_mg": 3, "carbs_g": 9, "fiber_g": 1.3, "added_sugar_g": 0, "sat_fat_g": 0, "trans_fat_g": 0}}
+            ]
+          },
+          {
+            "type": "dinner",
+            "items": [
+              {"name": "Baked tilapia (120 g)", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 150, "sodium_mg": 90, "carbs_g": 0, "fiber_g": 0, "added_sugar_g": 0, "sat_fat_g": 1.0, "trans_fat_g": 0}},
+              {"name": "Boiled sweet potato (100 g)", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 86, "sodium_mg": 27, "carbs_g": 20, "fiber_g": 3, "added_sugar_g": 0, "sat_fat_g": 0, "trans_fat_g": 0}},
+              {"name": "Sauteed green beans and carrots (80 g)", "servings": 2, "tags": ["vegetable"], "nutrients": {"calories_kcal": 40, "sodium_mg": 20, "carbs_g": 8, "fiber_g": 3, "added_sugar_g": 0, "sat_fat_g": 0.8, "trans_fat_g": 0}},
+              {"name": "Small apple (80 g)", "servings": 1, "tags": ["fruit"], "nutrients": {"calories_kcal": 45, "sodium_mg": 1, "carbs_g": 12, "fiber_g": 2, "added_sugar_g": 0, "sat_fat_g": 0, "trans_fat_g": 0}}
+            ]
+          },
+          {
+            "type": "snack",
+            "items": [
+              {"name": "Unsalted peanuts (30 g)", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 170, "sodium_mg": 2, "carbs_g": 5, "fiber_g": 2.4, "added_sugar_g": 0, "sat_fat_g": 2.4, "trans_fat_g": 0}},
+              {"name": "Plain yogurt (150 g)", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 90, "sodium_mg": 70, "carbs_g": 12, "fiber_g": 0, "added_sugar_g": 0, "sat_fat_g": 1.5, "trans_fat_g": 0}}
+            ]
+          }
+        ]
+      },
+      {
+        "day": "Day 2",
+        "meals": [
+          {
+            "type": "breakfast",
+            "items": [
+              {"name": "Whole wheat bread (1 slice)", "servings": 2, "tags": ["whole_grain"], "nutrients": {"calories_kcal": 80, "sodium_mg": 130, "carbs_g": 14, "fiber_g": 1.9, "added_sugar_g": 0, "sat_fat_g": 0.2, "trans_fat_g": 0}},
+              {"name": "Scrambled egg", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 100, "sodium_mg": 80, "carbs_g": 1, "fiber_g": 0, "added_sugar_g": 0, "sat_fat_g": 2.2, "trans_fat_g": 0}},
+              {"name": "Papaya cubes (80 g)", "servings": 2, "tags": ["fruit"], "nutrients": {"calories_kcal": 35, "sodium_mg": 3, "carbs_g": 9, "fiber_g": 1.3, "added_sugar_g": 0, "sat_fat_g": 0, "trans_fat_g": 0}},
+              {"name": "Unsweetened soy milk (1 cup)", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 80, "sodium_mg": 90, "carbs_g": 4, "fiber_g": 1, "added_sugar_g": 0, "sat_fat_g": 0.5, "trans_fat_g": 0}}
+            ]
+          },
+          {
+            "type": "lunch",
+            "items": [
+              {"name": "Mixed vegetable stew, no added salt (80 g)", "servings": 2, "tags": ["vegetable"], "nutrients": {"calories_kcal": 45, "sodium_mg": 35, "carbs_g": 8, "fiber_g": 3, "added_sugar_g": 0, "sat_fat_g": 0.5, "trans_fat_g": 0}},
+              {"name": "Grilled lean pork (100 g)", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 190, "sodium_mg": 60, "carbs_g": 0, "fiber_g": 0, "added_sugar_g": 0, "sat_fat_g": 2.5, "trans_fat_g": 0}},
+              {"name": "Brown rice, cooked (3/4 cup)", "servings": 1, "tags": ["whole_grain"], "nutrients": {"calories_kcal": 160, "sodium_mg": 5, "carbs_g": 33, "fiber_g": 2.5, "added_sugar_g": 0, "sat_fat_g": 0.3, "trans_fat_g": 0}}
+            ]
+          },
+          {
+            "type": "dinner",
+            "items": [
+              {"name": "Tofu (100 g)", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 80, "sodium_mg": 10, "carbs_g": 2, "fiber_g": 0.3, "added_sugar_g": 0, "sat_fat_g": 1.2, "trans_fat_g": 0}},
+              {"name": "Stir-fried bok choy (80 g)", "servings": 2, "tags": ["vegetable"], "nutrients": {"calories_kcal": 25, "sodium_mg": 40, "carbs_g": 3, "fiber_g": 1.5, "added_sugar_g": 0, "sat_fat_g": 0.3, "trans_fat_g": 0}},
+              {"name": "Brown rice, cooked (1 cup)", "servings": 1, "tags": ["whole_grain"], "nutrients": {"calories_kcal": 215, "sodium_mg": 10, "carbs_g": 45, "fiber_g": 3.5, "added_sugar_g": 0, "sat_fat_g": 0.4, "trans_fat_g": 0}}
+            ]
+          },
+          {
+            "type": "snack",
+            "items": [
+              {"name": "Unsalted almonds (28 g)", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 165, "sodium_mg": 0, "carbs_g": 6, "fiber_g": 3.5, "added_sugar_g": 0, "sat_fat_g": 1.2, "trans_fat_g": 0}}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "policy_ids": ["low_sodium", "diabetic_consistent_carb", "heart_healthy"]
+}

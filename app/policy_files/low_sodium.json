@@ -1,0 +1,63 @@
+{
+  "id": "low_sodium",
+  "name": "Low-Sodium Hospital Diet (2,000 mg/day)",
+  "description": "Limits sodium per day and per meal, and blocks very salty foods. Example limits for learning; confirm with a registered dietitian.",
+  "version": "1.0",
+  "rules": [
+    {
+      "id": "LS-REQUIRED-MEALS",
+      "type": "required_meals",
+      "meal_types": ["breakfast", "lunch", "dinner"],
+      "severity": "warning",
+      "message": "Each day should include breakfast, lunch, and dinner."
+    },
+    {
+      "id": "LS-DAY-SODIUM",
+      "type": "nutrient_limit",
+      "scope": "day",
+      "nutrient": "sodium_mg",
+      "max_value": 2000,
+      "severity": "violation",
+      "message": "Total sodium for the day must not go over 2,000 mg.",
+      "source": "WHO guideline: Sodium intake for adults and children (2012) - less than 2 g sodium per day"
+    },
+    {
+      "id": "LS-MEAL-SODIUM",
+      "type": "nutrient_limit",
+      "scope": "meal",
+      "meal_types": ["breakfast", "lunch", "dinner"],
+      "nutrient": "sodium_mg",
+      "max_value": 700,
+      "severity": "violation",
+      "message": "Sodium in one main meal must not go over 700 mg.",
+      "source": "Institutional example value (about one third of the daily limit)"
+    },
+    {
+      "id": "LS-SNACK-SODIUM",
+      "type": "nutrient_limit",
+      "scope": "meal",
+      "meal_types": ["snack"],
+      "nutrient": "sodium_mg",
+      "max_value": 200,
+      "severity": "warning",
+      "message": "Sodium in one snack should stay at or below 200 mg.",
+      "source": "Institutional example value"
+    },
+    {
+      "id": "LS-FORBID-HIGH-SODIUM-FOODS",
+      "type": "forbidden_tags",
+      "tags": ["cured_meat", "salted_fish", "instant_noodles", "pickled"],
+      "severity": "violation",
+      "message": "Very high-sodium foods are not allowed on this diet.",
+      "source": "Institutional example list"
+    },
+    {
+      "id": "LS-FORBID-CONDIMENTS",
+      "type": "forbidden_tags",
+      "tags": ["high_sodium_condiment"],
+      "severity": "warning",
+      "message": "Limit or replace high-sodium condiments (soy sauce, fish sauce, shrimp paste).",
+      "source": "Institutional example list"
+    }
+  ]
+}

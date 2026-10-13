@@ -1,0 +1,55 @@
+{
+  "id": "heart_healthy",
+  "name": "Heart-Healthy Diet",
+  "description": "Limits sodium, saturated fat, and trans fat, and asks for enough fruit and vegetables. Example limits for learning; confirm with a registered dietitian.",
+  "version": "1.0",
+  "rules": [
+    {
+      "id": "HH-SODIUM-DAY",
+      "type": "nutrient_limit",
+      "scope": "day",
+      "nutrient": "sodium_mg",
+      "max_value": 2000,
+      "severity": "violation",
+      "message": "Total sodium for the day must not go over 2,000 mg.",
+      "source": "WHO guideline: Sodium intake for adults and children (2012)"
+    },
+    {
+      "id": "HH-SATFAT-SHARE",
+      "type": "energy_share",
+      "nutrient": "sat_fat_g",
+      "kcal_per_g": 9,
+      "max_pct": 10,
+      "severity": "violation",
+      "message": "Saturated fat must give less than 10% of the day's calories.",
+      "source": "WHO guideline: Saturated fatty acid and trans-fatty acid intake (2023)"
+    },
+    {
+      "id": "HH-TRANSFAT-SHARE",
+      "type": "energy_share",
+      "nutrient": "trans_fat_g",
+      "kcal_per_g": 9,
+      "max_pct": 1,
+      "severity": "violation",
+      "message": "Trans fat must give less than 1% of the day's calories.",
+      "source": "WHO guideline: Saturated fatty acid and trans-fatty acid intake (2023)"
+    },
+    {
+      "id": "HH-FRUITVEG-MIN",
+      "type": "tag_servings",
+      "tags": ["fruit", "vegetable"],
+      "min_value": 5,
+      "severity": "warning",
+      "message": "Eat at least 5 servings of fruit and vegetables a day (1 serving is about 80 g).",
+      "source": "WHO: at least 400 g of fruit and vegetables per day"
+    },
+    {
+      "id": "HH-FORBID-FRIED-CURED",
+      "type": "forbidden_tags",
+      "tags": ["deep_fried", "cured_meat"],
+      "severity": "warning",
+      "message": "Avoid deep-fried foods and cured meats.",
+      "source": "Institutional example list"
+    }
+  ]
+}

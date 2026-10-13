@@ -1,0 +1,44 @@
+{
+  "plan": {
+    "plan_id": "SAMPLE-DIABETIC-FAIL-001",
+    "description": "One-day plan with too much carbohydrate, sugary drinks, and a high-sugar snack",
+    "days": [
+      {
+        "day": "Day 1",
+        "meals": [
+          {
+            "type": "breakfast",
+            "items": [
+              {"name": "White bread (1 slice)", "servings": 4, "tags": [], "nutrients": {"calories_kcal": 80, "sodium_mg": 140, "carbs_g": 15, "fiber_g": 0.6, "added_sugar_g": 1.5, "sat_fat_g": 0.2, "trans_fat_g": 0}},
+              {"name": "Strawberry jam (1 tbsp)", "servings": 2, "tags": [], "nutrients": {"calories_kcal": 50, "sodium_mg": 6, "carbs_g": 13, "fiber_g": 0.2, "added_sugar_g": 12, "sat_fat_g": 0, "trans_fat_g": 0}},
+              {"name": "Sweetened orange drink (1 cup)", "servings": 1, "tags": ["sugary_drink"], "nutrients": {"calories_kcal": 120, "sodium_mg": 10, "carbs_g": 29, "fiber_g": 0, "added_sugar_g": 25, "sat_fat_g": 0, "trans_fat_g": 0}}
+            ]
+          },
+          {
+            "type": "lunch",
+            "items": [
+              {"name": "Fried chicken (1 piece)", "servings": 1, "tags": ["deep_fried"], "nutrients": {"calories_kcal": 320, "sodium_mg": 700, "carbs_g": 11, "fiber_g": 0.5, "added_sugar_g": 0, "sat_fat_g": 4.5, "trans_fat_g": 0.5}},
+              {"name": "Steamed white rice (1 cup)", "servings": 2, "tags": [], "nutrients": {"calories_kcal": 205, "sodium_mg": 2, "carbs_g": 45, "fiber_g": 0.6, "added_sugar_g": 0, "sat_fat_g": 0, "trans_fat_g": 0}},
+              {"name": "Soft drink (355 ml)", "servings": 1, "tags": ["sugary_drink"], "nutrients": {"calories_kcal": 140, "sodium_mg": 15, "carbs_g": 39, "fiber_g": 0, "added_sugar_g": 39, "sat_fat_g": 0, "trans_fat_g": 0}}
+            ]
+          },
+          {
+            "type": "dinner",
+            "items": [
+              {"name": "Grilled fish (120 g)", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 150, "sodium_mg": 90, "carbs_g": 0, "fiber_g": 0, "added_sugar_g": 0, "sat_fat_g": 1.0, "trans_fat_g": 0}},
+              {"name": "Steamed mixed vegetables (80 g)", "servings": 2, "tags": ["vegetable"], "nutrients": {"calories_kcal": 30, "sodium_mg": 25, "carbs_g": 6, "fiber_g": 2.5, "added_sugar_g": 0, "sat_fat_g": 0, "trans_fat_g": 0}},
+              {"name": "Steamed white rice (1/2 cup)", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 103, "sodium_mg": 1, "carbs_g": 22, "fiber_g": 0.3, "added_sugar_g": 0, "sat_fat_g": 0, "trans_fat_g": 0}}
+            ]
+          },
+          {
+            "type": "snack",
+            "items": [
+              {"name": "Chocolate cake (1 slice)", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 350, "sodium_mg": 300, "carbs_g": 50, "fiber_g": 1.5, "added_sugar_g": 30, "sat_fat_g": 5, "trans_fat_g": 0.3}}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "policy_ids": ["diabetic_consistent_carb"]
+}

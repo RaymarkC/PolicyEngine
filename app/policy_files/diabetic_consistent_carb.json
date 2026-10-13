@@ -1,0 +1,106 @@
+{
+  "id": "diabetic_consistent_carb",
+  "name": "Diabetic Consistent-Carbohydrate Diet",
+  "description": "Keeps carbohydrate steady across meals and limits added sugar, sugary drinks, and sodium. Example limits for learning; confirm with a registered dietitian.",
+  "version": "1.0",
+  "rules": [
+    {
+      "id": "DM-REQUIRED-MEALS",
+      "type": "required_meals",
+      "meal_types": ["breakfast", "lunch", "dinner"],
+      "severity": "warning",
+      "message": "Each day should include breakfast, lunch, and dinner so carbohydrate is spread out."
+    },
+    {
+      "id": "DM-CARB-MEAL-MAX",
+      "type": "nutrient_limit",
+      "scope": "meal",
+      "meal_types": ["breakfast", "lunch", "dinner"],
+      "nutrient": "carbs_g",
+      "max_value": 60,
+      "severity": "violation",
+      "message": "Carbohydrate in one main meal must not go over 60 g.",
+      "source": "Institutional example value (common consistent-carbohydrate range)"
+    },
+    {
+      "id": "DM-CARB-MEAL-MIN",
+      "type": "nutrient_limit",
+      "scope": "meal",
+      "meal_types": ["breakfast", "lunch", "dinner"],
+      "nutrient": "carbs_g",
+      "min_value": 45,
+      "severity": "warning",
+      "message": "Carbohydrate in one main meal should be at least 45 g.",
+      "source": "Institutional example value (common consistent-carbohydrate range)"
+    },
+    {
+      "id": "DM-CARB-SNACK-MAX",
+      "type": "nutrient_limit",
+      "scope": "meal",
+      "meal_types": ["snack"],
+      "nutrient": "carbs_g",
+      "max_value": 30,
+      "severity": "violation",
+      "message": "Carbohydrate in one snack must not go over 30 g.",
+      "source": "Institutional example value"
+    },
+    {
+      "id": "DM-CARB-CONSISTENCY",
+      "type": "consistency",
+      "nutrient": "carbs_g",
+      "meal_types": ["breakfast", "lunch", "dinner"],
+      "max_difference": 15,
+      "severity": "warning",
+      "message": "Carbohydrate should be similar across main meals (within 15 g of each other).",
+      "source": "Institutional example value"
+    },
+    {
+      "id": "DM-ADDED-SUGAR-SHARE",
+      "type": "energy_share",
+      "nutrient": "added_sugar_g",
+      "kcal_per_g": 4,
+      "max_pct": 10,
+      "severity": "violation",
+      "message": "Added sugar must give less than 10% of the day's calories.",
+      "source": "WHO guideline: Sugars intake for adults and children (2015) - free sugars below 10% of energy"
+    },
+    {
+      "id": "DM-SUGARY-DRINK",
+      "type": "forbidden_tags",
+      "tags": ["sugary_drink"],
+      "severity": "violation",
+      "message": "Sugar-sweetened drinks are not allowed on this diet.",
+      "source": "Institutional example list"
+    },
+    {
+      "id": "DM-FIBER-MIN",
+      "type": "nutrient_limit",
+      "scope": "day",
+      "nutrient": "fiber_g",
+      "min_value": 25,
+      "severity": "warning",
+      "message": "Dietary fiber for the day should be at least 25 g.",
+      "source": "Institutional example value"
+    },
+    {
+      "id": "DM-SODIUM-DAY",
+      "type": "nutrient_limit",
+      "scope": "day",
+      "nutrient": "sodium_mg",
+      "max_value": 2300,
+      "severity": "warning",
+      "message": "Sodium for the day should stay at or below 2,300 mg.",
+      "source": "ADA Standards of Care - less than 2,300 mg sodium per day"
+    },
+    {
+      "id": "DM-SATFAT-SHARE",
+      "type": "energy_share",
+      "nutrient": "sat_fat_g",
+      "kcal_per_g": 9,
+      "max_pct": 10,
+      "severity": "warning",
+      "message": "Saturated fat should give less than 10% of the day's calories.",
+      "source": "WHO guideline: Saturated fatty acid and trans-fatty acid intake (2023)"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "plan": {
+    "plan_id": "SAMPLE-LOW-SODIUM-FAIL-001",
+    "description": "Plan with salty foods, a snack over the limit, a food with missing sodium data, and a missing dinner on Day 2",
+    "days": [
+      {
+        "day": "Day 1",
+        "meals": [
+          {
+            "type": "breakfast",
+            "items": [
+              {"name": "Instant noodles (1 cup)", "servings": 1, "tags": ["instant_noodles"], "nutrients": {"calories_kcal": 380, "sodium_mg": 1600, "carbs_g": 52}},
+              {"name": "Dried salted fish (2 pieces)", "servings": 1, "tags": ["salted_fish"], "nutrients": {"calories_kcal": 90, "sodium_mg": 900, "carbs_g": 0}},
+              {"name": "Fried egg", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 90, "sodium_mg": 95, "carbs_g": 0.4}}
+            ]
+          },
+          {
+            "type": "lunch",
+            "items": [
+              {"name": "Grilled chicken breast (100 g)", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 165, "sodium_mg": 74, "carbs_g": 0}},
+              {"name": "Soy sauce (1 tbsp)", "servings": 1, "tags": ["high_sodium_condiment"], "nutrients": {"calories_kcal": 10, "sodium_mg": 900, "carbs_g": 1}},
+              {"name": "Steamed rice (1 cup)", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 205, "sodium_mg": 2, "carbs_g": 45}}
+            ]
+          },
+          {
+            "type": "dinner",
+            "items": [
+              {"name": "Baked fish (120 g)", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 150, "sodium_mg": 90, "carbs_g": 0}},
+              {"name": "Home-made vegetable soup (no sodium data)", "servings": 1, "tags": ["vegetable"], "nutrients": {"calories_kcal": 90, "carbs_g": 12}}
+            ]
+          },
+          {
+            "type": "snack",
+            "items": [
+              {"name": "Potato chips (1 small bag)", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 150, "sodium_mg": 300, "carbs_g": 15}}
+            ]
+          }
+        ]
+      },
+      {
+        "day": "Day 2",
+        "meals": [
+          {
+            "type": "breakfast",
+            "items": [
+              {"name": "Oatmeal, cooked (1 cup)", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 160, "sodium_mg": 5, "carbs_g": 28}}
+            ]
+          },
+          {
+            "type": "lunch",
+            "items": [
+              {"name": "Grilled chicken breast (100 g)", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 165, "sodium_mg": 74, "carbs_g": 0}},
+              {"name": "Steamed rice (1 cup)", "servings": 1, "tags": [], "nutrients": {"calories_kcal": 205, "sodium_mg": 2, "carbs_g": 45}}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "policy_ids": ["low_sodium"]
+}
